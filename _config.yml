@@ -1,4 +1,4 @@
 name: Tiki Night
 markdown: redcarpet
 pygments: true
-baseurl: tiki-night
+baseurl: /tiki-night

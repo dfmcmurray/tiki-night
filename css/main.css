@@ -25,6 +25,10 @@ h2, h3, h4, h5 {
   margin-right: 30%;
 }
 
+.tooltip-inner {
+  width: 350px;
+}
+
 /* Home */
 #home .tiki-history {
   margin-top: 30px;

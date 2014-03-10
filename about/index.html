@@ -4,5 +4,39 @@ title: About
 ---
 
 <div id="about">
-  About
+	<h1>About</h1>
+	
+	<p>
+		Tiki Night is a private party for your friends and family to enjoy a night of food, entertainment, games and prizes. Now it's your turn to help us Sweeten The Night To Fight MS.  Money raised from your ticket purchase will go directly to to the National MS Society, so bring your friends and family to enjoy a night in the heart of Hollywood!
+	</p>
+
+	<div class='row'>
+
+		<div class='col-md-6'>
+			<h3>2013 Prizes To Be Won</h3>
+			<ul class='prize-list'>
+				{% for prize in site.data.prizes %}
+					<li class='prize'>{{prize}}</li>
+				{% endfor %}
+			</ul>
+
+			<p class='call-for-prizes'>
+				We're still in the process of gathering our prize packages for the evening. If you have something FABULOUS that you'd like to donate we'll make sure you and your business will get the recognition it deserves.
+			</p>
+		</div>
+
+		<div class='col-md-6'>
+			<h3>2013 Entertainment</h3>
+			<ul class='entertainment-list'>
+				{% for act in site.data.entertainment %}
+					<li class='act'>
+						<div class='name'>{{act.name}}</div>
+						{% if act.time %}
+							<div class='time'>{{act.time}}</div>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
 </div>

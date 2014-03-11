@@ -35,6 +35,23 @@ h2, h3, h4, h5 {
   margin-right: 30%;
 }
 
+.tiki-footer {
+  text-align: center;
+}
+
+.tiki-footer .sponsor img {
+  width: 6%;
+  margin: 5px;
+}
+
+.tiki-footer .sponsor a {
+  opacity: 0.6;
+}
+
+.tiki-footer .sponsor a:hover {
+  opacity: 1;
+}
+
 .tooltip-inner {
   width: 350px;
 }

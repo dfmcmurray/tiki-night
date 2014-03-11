@@ -1,0 +1,14 @@
+<footer class='tiki-footer'>
+
+	<div class='sponsors'>
+		{% for sponsor in site.data.sponsors %}
+			<span class='sponsor'>
+				<a href='{{sponsor.url}}'>
+					<title>{{sponsor.name}}</title>
+					<img src='{{site.baseurl}}/assets/{{sponsor.img}}'>
+				</a>
+			</span>
+		{% endfor %}
+	</div>
+
+</footer>

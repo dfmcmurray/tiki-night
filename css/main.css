@@ -90,3 +90,28 @@ h2, h3, h4, h5 {
 #home .tiki-history * {
   text-align: center;
 }
+
+/* About */
+#about .fun-stuff * {
+  text-align: center;
+}
+
+#about .call-for-prizes {
+  margin-top: 25px;
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#about ul li {
+  border: 1px solid #e56238;
+  border-radius: 50px;
+  background: #fff2e8;
+  color: #e56238;
+  font-size: 16px;
+  padding: 10px;
+  width: 70%;
+  margin: 6px auto;
+}

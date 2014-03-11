@@ -39,6 +39,11 @@ h2, h3, h4, h5 {
   text-align: center;
 }
 
+.tiki-footer .sponsors {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 .tiki-footer .sponsor img {
   width: 6%;
   margin: 5px;
@@ -71,4 +76,17 @@ h2, h3, h4, h5 {
 /* Home */
 #home .tiki-history {
   margin-top: 30px;
+}
+
+#home .announcements .alert {
+  margin: 10px auto;
+  padding: 25px 15px;
+  width: 95%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#home .tiki-history * {
+  text-align: center;
 }

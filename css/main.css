@@ -177,3 +177,9 @@ h2, h3, h4, h5 {
 #about-ms .videos iframe {
   margin: 25px;
 }
+
+/* Contact */
+
+#contact .contact-description {
+  margin : 25px 15px;
+}

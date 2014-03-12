@@ -148,14 +148,16 @@ h2, h3, h4, h5 {
 
 /* Directions */
 
-#directions .address {
-  padding: 3% 0 0 0;
+#directions .map-and-address {
   text-align: center;
 }
 
 #directions .map {
-  margin: 30px;
-  text-align: center;
+  margin: 10px;
+}
+
+#directions .location-description {
+  margin: 5px 0px;
 }
 
 #directions .transportation-method {

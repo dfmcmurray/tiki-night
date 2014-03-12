@@ -144,3 +144,19 @@ h2, h3, h4, h5 {
   margin-top: 15px;
   font-size: 10px;
 }
+
+/* Directions */
+
+#directions .address {
+  padding: 3% 0 0 0;
+  text-align: center;
+}
+
+#directions .map {
+  margin: 30px;
+  text-align: center;
+}
+
+#directions .transportation-method {
+  margin: 35px;
+}

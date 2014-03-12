@@ -115,3 +115,32 @@ h2, h3, h4, h5 {
   width: 70%;
   margin: 6px auto;
 }
+
+/* Tickets + Info */
+
+#tickets .center-text {
+  text-align: center;
+}
+
+#tickets .center-text * {
+  text-align: center;
+}
+
+#tickets .glyphicon-info-sign {
+  margin-left: 5px;
+}
+
+#tickets .kahuna-extra-info {
+  display: none;
+  padding-top: 5px;
+}
+
+#tickets a.toggle-kahuna-info {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#tickets a.toggle-kahuna-info .glyphicon {
+  margin-top: 15px;
+  font-size: 10px;
+}

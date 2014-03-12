@@ -4,130 +4,134 @@ title: Tickets
 ---
 
 <script type='text/javascript'>
-	setTimeout(function(){ $('.party-tip').tooltip() }, 1);
+	setTimeout(function(){ 
+		// post rendering adjustments
+
+		$('.party-tip').tooltip({
+			placement : 'right',
+			title : "Order your tickets online before August 1st and you'll receive a surprise party favor.",
+		});
+
+		$('a.toggle-kahuna-info').click(function(){
+			if ($('.kahuna-extra-info').is(':visible')) {
+				$('.kahuna-extra-info').slideUp();
+				$('a.toggle-kahuna-info').html('More <span class="glyphicon glyphicon-chevron-down"></span>');
+			} else {
+				$('.kahuna-extra-info').slideDown();
+				$('a.toggle-kahuna-info').html('Less <span class="glyphicon glyphicon-chevron-up"></span>');
+			}
+		})
+	}, 1);
 </script>
 
 <div id="tickets">
 	<h1>What you need to know before you get to Tiki Night</h1>
 
-	<h2>2013 Ticket Prices</h2>
+	<h2>2014 Ticket Prices</h2>
 
 	<p>
-		The basic admission donation ticket includes entry, light food, entertainment, and one entry for the door prize.  There are other admission packages that include more drink tickets and raffle tickets. Additional beverages and raffle tickets will be available at the event for purchase or you can choose the admission package that suits you best when you buy your tickets in advance and on line. Expanded Tiki Night packages will not be sold in person or on the day of the party.
+		The basic admission donation ticket includes entry, light food, entertainment, and one entry for the door prize.  There are other admission packages that include more drink tickets and raffle tickets. Additional beverages and raffle tickets will be available at the event for purchase or you can choose the admission package that suits you best when you buy your tickets in advance and online. Expanded Tiki Night packages will not be sold in person or on the day of the party.
 	</p>
 
 	<div class='row'>
-		<div class='col-md-6'>
+		<div class='center-text col-md-6'>
 			<h3>ONLINE WEB ADVANCE</h3>
 
-			<h4>MANINI - $20</h4>
-			<p>
-				Admission, Light Food, Entertainment, 1 entry for Door Prize 
-				<span class='party-tip' 
-					data-toggle="tooltip" 
-					data-placement="right" 
-					title="Order your tickets on line before August 1st and you'll receive a surprise party favor. ">
-					<span class="glyphicon glyphicon-info-sign"></span>
-				</span>
-			</p>
+			<div class='alert alert-info'>
+				<h4>MANINI - $20</h4>
+				<p>
+					Admission, Light Food, Entertainment, 1 entry for Door Prize 
+					<span class='party-tip'>
+						<span class="glyphicon glyphicon-info-sign"></span>
+					</span>
+				</p>
+			</div>
 
-			<h4>BAMBOOCHA - $60</h4>
-			<p>
-				Admission, Light Food, Entertainment, 1 Drink Ticket, 1 Raffle Ticket, 1 entry for Door Prize, and the official Team Tiki Ha Ha Candy Bar
-				<span class="glyphicon glyphicon-info-sign party-tip" 
-					data-toggle="tooltip" data-placement="right" 
-					title="Order your tickets on line before August 1st and you'll receive a surprise party favor. "></span>
-			</p>
+			<div class='alert alert-info'>
+				<h4>BAMBOOCHA - $60</h4>
+				<p>
+					Admission, Light Food, Entertainment, 1 Drink Ticket, 1 Raffle Ticket, 1 entry for Door Prize, and the official Team Tiki Ha Ha Candy Bar
+					<span class='party-tip'>
+						<span class="glyphicon glyphicon-info-sign"></span>
+					</span>
+				</p>
+			</div>
 		</div>
-		<div class='col-md-6'>
+		<div class='center-text col-md-6'>
 			<h3>DAY OF EVENT</h3>
 
-			<h4>HAWA'I TIME - $30</h4>
-			<p>
-				Admission, Light Food, Enterainment
-			</p>
+			<div class='alert alert-info'>
+				<h4>HAWA'I TIME - $30</h4>
+				<p>
+					Admission, Light Food, Enterainment
+				</p>
+			</div>
 		</div>
 	</div>
 
 	<div class='row'>
 		<div class='col-md-8 col-md-offset-2'>
-			<h3>BIG KAHUNA SPONSORSHIP</h3>
+			<h3 class='center-text'>BIG KAHUNA SPONSORSHIP</h3>
 
-			<p>
-				For $400 you can sponsor part of our fundraising efforts at Tiki Night.  Your sponsorship money will be used for our expenses - everything from food/drink supplies down helping us pay for the venue expenses.  Anything left over will be given directly to the National MS Society. 
-			</p>
+			<div class='alert alert-info'>
+				<h4 class='center-text'>BIG KAHUNA - $400</h4>
 
-			<p>
-				In doing this, you'll be helping us to reduce our expenses and allowing us to send more donation money to the National MS Society.
-			</p>
+				<p>
+					For $400 you can sponsor part of our fundraising efforts at Tiki Night.  Your sponsorship money will be used for our expenses - everything from food/drink supplies down helping us pay for the venue expenses.  Anything left over will be given directly to the National MS Society. 
+				</p>
 
-			<p>
-				For your sponsorship you will receive the following:
-			</p>
+				<p>
+					In doing this, you'll be helping us to reduce our expenses and allowing us to send more donation money to the National MS Society.
+				</p>
 
-			<ul>
-				<li>
-					Naming rights and signage for one of the following: Our Stage, Our Food Station, or Our Tiki Bar.
-				</li>
-				<li>
-					2 admissions, Light Food, 2 Drink Tickets, 2 Raffle Tickets, 2 entries for our Door Prize, 2 Official Team Tiki Ha Ha Candy Bars, 2 Party Leis, and a "surprise" party favor.
-				</li>
-				<li>
-					A Behind The Glass Tour at Sweet! Hollywood - see them make candy!
-				</li>
-				<li>
-					Exclusive seating are for you and your guest.
-				</li>
-				<li>
-					Signage and mentions during the event evening.
-				</li>
-				<li>
-					Logo and link placement on this web site.
-				</li>
-				<li>
-					Social Media exposure leading up to Tiki Night.
-				</li>
-				<li>
-					Marketing Materials or party favors placed in our Swag Bag for our guests' exposure.
-				</li>
-				<li>
-					Full color souvenir book from the evening (delivered via mail after the event).
-				</li>
-			</ul>
+				<div class='kahuna-extra-info'>
 
-			<p>
-				To sponsor the evening, please follow the BUY TICKETS link and look for SPONSORSHIP.
-			</p>
+					<p>
+						For your sponsorship you will receive the following:
+					</p>
+
+					<ul>
+						<li>
+							Naming rights and signage for one of the following: Our Stage, Our Food Station, or Our Tiki Bar.
+						</li>
+						<li>
+							2 admissions, Light Food, 2 Drink Tickets, 2 Raffle Tickets, 2 entries for our Door Prize, 2 Official Team Tiki Ha Ha Candy Bars, 2 Party Leis, and a "surprise" party favor.
+						</li>
+						<li>
+							A Behind The Glass Tour at Sweet! Hollywood - see them make candy!
+						</li>
+						<li>
+							Exclusive seating are for you and your guest.
+						</li>
+						<li>
+							Signage and mentions during the event evening.
+						</li>
+						<li>
+							Logo and link placement on this web site.
+						</li>
+						<li>
+							Social Media exposure leading up to Tiki Night.
+						</li>
+						<li>
+							Marketing Materials or party favors placed in our Swag Bag for our guests' exposure.
+						</li>
+						<li>
+							Full color souvenir book from the evening (delivered via mail after the event).
+						</li>
+					</ul>
+
+					<p>
+						To sponsor the evening, please follow the BUY TICKETS link and look for SPONSORSHIP.
+					</p>
+
+				</div>
+
+				<a class='toggle-kahuna-info'>More <span class='glyphicon glyphicon-chevron-down'></span></a>
+			</div>
 		</div>
 	</div>
 
 	<h2>Important Stuff</h2>
-
-	<h3>WHATS NEW FOR 2013?</h3>
-
-	<p>
-		<strong>Well... for starters... WE'VE MOVED!</strong> So make sure you don't go to Mr. Miller's home!!! It will be empty, dark, and void of Tiki torches. Worse yet, if you knock on his door, he'll just giggle at you because you didn't read this web site, our Facebook page, or our Twitter feed.
-	</p>
-
-	<p>
-		<strong>RED CARPET ARRIVALS</strong> are courtesy of Sweet! Hollywood and a few other folks we can't mention right now.  We suggest you bring your cameras and soak up the Sweet! Hollywood vibe!
-	</p>
-
-	<p>
-		<strong>THE 501st: VADER'S FIRST</strong> have found their way to Tiki Night 2013 by special invitation.  They've notified Lord Vader HIMSELF and his charge who will be checking in on each and every one of our guests at Tiki Night. Do not be afraid. They're just looking for members of the Rebel Alliance. And whatever you do... do  NOT "Vader" Lord Vader. You'll just... well, it won't turn out well!
-	</p>
-
-	<p>
-		<strong>GUITAR HERO TOURNAMENT, PAC MAN TOURNAMENT, AND THE BLACK JACK TABLE</strong> are all new activities we think you'll love. The entry fees are minimal and you can win some fabulous prizes.
-	</p>
-
-	<p>
-		<strong>SILENT AUCTION ITEMS</strong> will be displayed and you can bid on them! We're still gathering them, but we know one of the prizes will be an XBOX Gaming System complete with two games, two DVD Titles, and a few other items we're throwing in.
-	</p>
-
-	<p>
-		<strong>THE OFFICIAL TEAM TIKI HA HA CANDY BAR</strong> is courtesy of Sweet! Hollywood. A portion of every team candy bar sale will be donated to the National MS Society thanks to the good folks at Sweet!
-	</p>
 
 	<h3>HOW CAN I PAY FOR STUFF?</h3>
 
@@ -144,7 +148,7 @@ title: Tickets
 	<h3>ACCESSIBILITY</h3>
 
 	<p>
-		<strong>WE HEARD YOU LOUD AND CLEAR.</strong> Tiki Night 2013 has become accessible for those who need it! Got a wheelchair? No problem! We request that you please check in with Hollywood & Highland Center for more information.
+		<strong>WE HEARD YOU LOUD AND CLEAR.</strong> Tiki Night has become accessible for those who need it! Got a wheelchair? No problem! We request that you please check in with Hollywood & Highland Center for more information.
 	</p>
 
 	<h3>PROOF OF AGE REQUIRED</h3>

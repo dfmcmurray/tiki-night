@@ -9,16 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   min-height: 50vh;
-}
-
-.peeking-tiki {
-  display: none;
-  position: absolute;
-  width: 30vh;
-  height: 60vh;
-  opacity: 0.75;
-  bottom: 4vh;
-  left: -15vh;
+  max-width: 700px;
 }
 
 h1 {
@@ -30,10 +21,32 @@ h2, h3, h4, h5 {
   color: #005d8b;
 }
 
+.navbar .nav{
+    float: none;
+    text-align: center;
+}
+.navbar .nav > li{
+    float: none;
+    display: inline-block;
+}
+
+.tiki-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.tiki-header .peeking-tiki {
+  width: 8vw;
+}
+
 .tiki-header .logo {
-  width: 60%;
-  margin-left: 10%;
-  margin-right: 30%;
+  width: 64vw;
+}
+
+@media (max-width: 600px) {
+  .tiki-header .peeking-tiki {
+    display: none;
+  }
 }
 
 .tiki-footer {
@@ -60,18 +73,6 @@ h2, h3, h4, h5 {
 
 .tooltip-inner {
   width: 350px;
-}
-
-@media screen and (min-width: 900px) and (min-height: 600px) {
-  .content {
-    width: 80%;
-    margin-left: 15%;
-    margin-right: 5%;
-  }
-
-  .peeking-tiki {
-    display : inline;
-  }
 }
 
 /* Home */

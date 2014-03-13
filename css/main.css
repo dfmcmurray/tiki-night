@@ -120,6 +120,7 @@ h2, h3, h4, h5 {
 #about ul {
   list-style-type: none;
   padding: 0px;
+  margin: 25px 0px;
 }
 
 #about ul li {

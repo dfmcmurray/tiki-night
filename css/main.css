@@ -1,7 +1,8 @@
 .site {
   font-size: 115%;
   text-align: justify;
-  /*line-height: 1.5em;*/
+  overflow: scroll;
+  height: 100vh;
 }
 
 .content {
@@ -35,17 +36,26 @@ h2, h3, h4, h5 {
   margin-bottom: 8px;
 }
 
-.tiki-header .peeking-tiki {
-  width: 8vw;
-}
-
 .tiki-header .logo {
-  width: 64vw;
+  width: 60%;
 }
 
-@media (max-width: 600px) {
-  .tiki-header .peeking-tiki {
-    display: none;
+.twitter-timeline {
+  display: none;
+  
+}
+
+@media (min-width: 1200px) {
+  .twitter-timeline {
+    display: block;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .site {
+    width: 75%;
   }
 }
 

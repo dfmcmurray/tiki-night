@@ -68,13 +68,27 @@ h2, h3, h4, h5 {
   text-align: center;
 }
 
+.tiki-footer .disclaimer {
+  font-size: 12px;
+  font-style: italic;
+  color: #555;
+  width: 80%;
+  max-width: 650px;
+  margin: 15px auto;
+}
+
+.tiki-footer hr {
+  width: 80%;
+  border-top: 1px solid #ddd;
+}
+
 .tiki-footer .sponsors {
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 5px;
 }
 
 .tiki-footer .sponsor img {
-  width: 6%;
+  width: 8%;
   margin: 5px;
 }
 

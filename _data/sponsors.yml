@@ -10,10 +10,6 @@
   img: "SaltilloGrill.jpg"
   url: "http://saltillogrill.com/"
 
-- name: "Sticky"
-  img: "sticky_logo_top.png"
-  url: "http://stickyusa.com/"
-
 - name: "501st Legion"
   img: "501stmasterroundlarge.jpg"
   url: "http://southerncaliforniagarrison.com/"
@@ -21,10 +17,6 @@
 - name: "Universal Studios Hollywood"
   img: "univ_holly.jpg"
   url: "http://www.universalstudioshollywood.com/"
-
-- name: "Cold Tofu"
-  img: "ColdTofu.jpg"
-  url: "http://www.coldtofu.com/"
 
 - name: "Team Tiki Ha Ha"
   img: "TeamTikiHaHaMobileLogo.png"
@@ -37,14 +29,6 @@
 - name: "Operation Boot Camp"
   img: "Operation_Boot_Camp_Logo_Hires.jpg"
   url: "http://www.operationbootcamp.com/boot-camp-grand-park-los-angeles-california/"
-
-- name: "Halloween Adventure"
-  img: "HalloweenAdventure.jpg"
-  url: "http://www.shophalloweenadventure.com/"
-
-- name: "Humor Abuse"
-  img: "HumorAbuse.jpg"
-  url: "http://www.centertheatregroup.org/tickets/Humor-Abuse/"
 
 - name: "Center Theater Group"
   img: "ctg_logo.jpg"

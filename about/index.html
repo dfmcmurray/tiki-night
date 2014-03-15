@@ -30,10 +30,14 @@ title: About
 			<ul class='entertainment-list'>
 				{% for act in site.data.entertainment %}
 					<li class='act'>
-						<div class='name'>{{act.name}}</div>
-						{% if act.time %}
-							<div class='time'>{{act.time}}</div>
-						{% endif %}
+						<div class='act-container'>
+							<div class='name'>{{act.name}}</div>
+							{% if act.time != "" %}
+								<div class='time'>{{act.time}}</div>
+							{% else %}
+								<div class='time'>TBD</div>
+							{% endif %}
+						</div>
 					</li>
 				{% endfor %}
 			</ul>

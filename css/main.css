@@ -129,14 +129,30 @@ h2, h3, h4, h5 {
 }
 
 #about ul li {
-  border: 1px solid #e56238;
-  border-radius: 50px;
-  background: #fff2e8;
-  color: #e56238;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
-  width: 70%;
   margin: 6px auto;
+}
+
+#about ul li:before, #about ul li:after {
+  margin: 10px 5px;
+  vertical-align: top;
+  display: inline-block;
+  content: "";
+  background-color: #e56238;
+  height: 6px;
+  width: 6px;
+  border-radius: 50px;
+}
+
+#about .act-container {
+  display: inline-block;
+}
+
+#about .act .time {
+  font-style: italic;
+  font-size: 12px;
+  color: #e56238;
 }
 
 /* Tickets + Info */

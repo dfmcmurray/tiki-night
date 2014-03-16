@@ -16,6 +16,7 @@
 h1 {
   color: #e56238;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 h2, h3, h4, h5 {
@@ -124,6 +125,11 @@ h2, h3, h4, h5 {
 }
 
 /* Home */
+
+#home h1 {
+  max-width : 500px;
+}
+
 #home .tiki-history {
   margin-top: 30px;
 }
@@ -184,6 +190,10 @@ h2, h3, h4, h5 {
 }
 
 /* Tickets + Info */
+
+#tickets h1 {
+  max-width: 550px
+}
 
 #tickets .center-text {
   text-align: center;

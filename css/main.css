@@ -244,6 +244,22 @@ h2, h3, h4, h5 {
   margin: 25px;
 }
 
+/* Ohana */
+
+#ohana .team-header {
+  margin-top: 25px;
+}
+
+#ohana .person {
+  text-align: center;
+  margin: 25px 0px;
+}
+
+#ohana .person img {
+  width: 200px;
+  border-radius: 30%;
+}
+
 /* Contact */
 
 #contact .contact-description {

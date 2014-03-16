@@ -15,11 +15,36 @@ title: Ohana
 	<h3>He can't do this alone... <br>
 		Skypp has many Menehunes helping him out!</h3>
 
+	<h4 class='team-header'>2014 Team Tiki Ha Ha</h4>
+
+	<div class='row'>
+
+		{% for person in site.data.people %}
+
+			<div class='col-md-4'>
+				<div class='person'>
+					<img src='{{site.baseurl}}/assets/people/{{person.img}}'>
+					<h5>{{person.name}}</h5>
+				</div>
+			</div>
+
+	{% capture modulo3 %}{{ forloop.index | modulo:3 }}{% endcapture %}
+	{% if modulo3 == '0' %}
+
+	</div>
+	<div class='row'>
+
+	{% endif %}
+
+		{% endfor %}
+
+	</div>
+
 	<p>
 		Coming to Tiki Night with your friends and family makes you instantly part of our Ohana. But “Sweetening The Night To Fight MS” doesn't happen by just waiving our hands in the air like we just don't care. It happens with the help of the following people, businesses and organizations.These are our Menehune Ohana.  Please make sure to thank these fine folks by supporting them in their own efforts.
 	</p>
 
 	<p>
-		Ohana means Family. We’ll leave it up to you to figure out what a Menehunes is. 
+		Ohana means Family. We’ll leave it up to you to figure out what a Menehune is. 
 	</p>
 </div>

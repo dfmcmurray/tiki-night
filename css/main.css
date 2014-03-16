@@ -266,6 +266,10 @@ h2, h3, h4, h5 {
   margin: 25px 0px;
 }
 
+#ohana .person * {
+  text-align: center;
+}
+
 #ohana .person img {
   width: 200px;
   border-radius: 30%;

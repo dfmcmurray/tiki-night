@@ -2,7 +2,6 @@
   font-size: 115%;
   text-align: justify;
   overflow: scroll;
-  height: 100vh;
 }
 
 .content {
@@ -81,6 +80,7 @@ h2, h3, h4, h5 {
   }
   .site {
     width: 75%;
+    height: 100vh;
   }
 }
 

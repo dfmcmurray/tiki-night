@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 
-        <script src="{{site.baseurl}}/libs/jquery.min.js"></script>
-        <script src="{{site.baseurl}}/libs/bootstrap.min.js"></script>
+    <script src="{{site.baseurl}}/libs/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/libs/bootstrap.min.js"></script>
 
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    </head>
-    <body>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        <div class="site">
-          {% include header.html %}
+  </head>
+  <body>
 
-          {% include nav.html %}
+    <div class="site">
+      {% include header.html %}
 
-          <div class="content">
-            {{ content }}
-          </div>
+      {% include nav.html %}
 
-          {% include footer.html %}
+      <div class="content">
+        {{ content }}
+      </div>
 
-        </div>
+      {% include footer.html %}
 
-        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dfmcmurray/tiki-night" data-widget-id="444873369515597824">Tweets from @TikiNightEvents and @TeamTikiHaHa</a>
+    </div>
 
-    </body>
+    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dfmcmurray/tiki-night" data-widget-id="444873369515597824">Tweets from @TikiNightEvents and @TeamTikiHaHa</a>
+
+  </body>
 </html>

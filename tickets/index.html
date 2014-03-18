@@ -4,24 +4,38 @@ title: Tickets
 ---
 
 <script type='text/javascript'>
-	setTimeout(function(){ 
-		// post-rendering adjustments
+setTimeout(function(){ 
+	if (window.jQuery) {
+		
+			// post-rendering adjustments
+		
+			$('.party-tip').tooltip({
+				placement : 'bottom',
+				title : "Order your tickets online before August 1st and you'll receive a surprise party favor.",
+			});
 
-		$('.party-tip').tooltip({
-			placement : 'bottom',
-			title : "Order your tickets online before August 1st and you'll receive a surprise party favor.",
-		});
-
-		$('a.toggle-kahuna-info').click(function(){
-			if ($('.kahuna-extra-info').is(':visible')) {
-				$('.kahuna-extra-info').slideUp();
-				$('a.toggle-kahuna-info').html('More <span class="glyphicon glyphicon-chevron-down"></span>');
-			} else {
-				$('.kahuna-extra-info').slideDown();
-				$('a.toggle-kahuna-info').html('Less <span class="glyphicon glyphicon-chevron-up"></span>');
-			}
-		})
-	}, 1);
+			$('a.toggle-kahuna-info').click(function(){
+				if ($('.kahuna-extra-info').is(':visible')) {
+					$('.kahuna-extra-info').slideUp();
+					$('a.toggle-kahuna-info').html('More <span class="glyphicon glyphicon-chevron-down"></span>');
+				} else {
+					$('.kahuna-extra-info').slideDown();
+					$('a.toggle-kahuna-info').html('Less <span class="glyphicon glyphicon-chevron-up"></span>');
+				}
+			});
+		
+	} else {
+		var elementsToShow = document.querySelectorAll('.jq-dep-sub');
+		var elementsToHide = document.querySelectorAll('.jq-dependent');
+		var i;
+		for (i = 0; i < elementsToShow.length; i++) {
+			elementsToShow[i].style.display = 'BLOCK';
+		}
+		for (i = 0; i < elementsToHide.length; i++) {
+			elementsToHide[i].style.display = 'NONE';
+		}
+	}
+}, 1);
 </script>
 
 <div id="tickets">
@@ -41,9 +55,12 @@ title: Tickets
 				<h4>MANINI - $20</h4>
 				<p>
 					Admission, Light Food, Entertainment, 1 entry for Door Prize 
-					<span class='party-tip'>
+					<span class='party-tip jq-dependent'>
 						<span class="glyphicon glyphicon-info-sign"></span>
 					</span>
+				</p>
+				<p class='jq-dep-sub'>
+					Order your tickets online before August 1st and you'll receive a surprise party favor.
 				</p>
 			</div>
 
@@ -51,9 +68,12 @@ title: Tickets
 				<h4>BAMBOOCHA - $60</h4>
 				<p>
 					Admission, Light Food, Entertainment, 1 Drink Ticket, 1 Raffle Ticket, 1 entry for Door Prize, and the official Team Tiki Ha Ha Candy Bar
-					<span class='party-tip'>
+					<span class='party-tip jq-dependent'>
 						<span class="glyphicon glyphicon-info-sign"></span>
 					</span>
+				</p>
+				<p class='jq-dep-sub'>
+					Order your tickets online before August 1st and you'll receive a surprise party favor.
 				</p>
 			</div>
 		</div>
@@ -84,7 +104,7 @@ title: Tickets
 					In doing this, you'll be helping us to reduce our expenses and allowing us to send more donation money to the National MS Society.
 				</p>
 
-				<div class='kahuna-extra-info'>
+				<div class='kahuna-extra-info jq-dep-sub'>
 
 					<p>
 						For your sponsorship you will receive the following:
@@ -126,7 +146,7 @@ title: Tickets
 
 				</div>
 
-				<a class='toggle-kahuna-info'>More <span class='glyphicon glyphicon-chevron-down'></span></a>
+				<a class='toggle-kahuna-info jq-dependent'>More <span class='glyphicon glyphicon-chevron-down'></span></a>
 			</div>
 		</div>
 	</div>

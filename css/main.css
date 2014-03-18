@@ -42,7 +42,7 @@ h2, h3, h4, h5 {
   display: none; 
 }
 
-@media (min-width: 770px) {
+@media only screen and (min-width: 770px) {
   .navbar .nav{
       float: none;
       text-align: center;
@@ -53,20 +53,20 @@ h2, h3, h4, h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 770px) {
+@media only screen and (min-width: 768px) and (max-width: 770px) {
   .navbar .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tiki-header .logo {
     width: 80%;
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .twitter-timeline {
     display: block;
     width: 25%;
@@ -221,6 +221,10 @@ h2, h3, h4, h5 {
 #tickets a.toggle-kahuna-info .glyphicon {
   margin-top: 15px;
   font-size: 10px;
+}
+
+#tickets .jq-dep-sub {
+  display: none;
 }
 
 /* Directions */

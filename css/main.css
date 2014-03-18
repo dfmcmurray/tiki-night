@@ -38,6 +38,10 @@ h2, h3, h4, h5 {
   width: 60%;
 }
 
+.tiki-header .sweet-logo {
+  width: 15%;
+}
+
 .twitter-timeline {
   display: none; 
 }

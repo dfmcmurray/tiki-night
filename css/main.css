@@ -103,12 +103,14 @@ h2, h3, h4, h5 {
 
 @media only screen and (max-width: 770px) {
   .tiki-footer .sponsors {
-    width: 85%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   .tiki-footer .sponsor img {
     width: 16%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   .tiki-footer .sponsor a {
     opacity: 1;

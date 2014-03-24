@@ -45,45 +45,6 @@ h2, h3, h4, h5 {
   display: none; 
 }
 
-@media only screen and (min-width: 770px) {
-  .navbar .nav{
-      float: none;
-      text-align: center;
-  }
-  .navbar .nav > li{
-      float: none;
-      display: inline-block;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 770px) {
-  .navbar .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .tiki-header .logo {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .twitter-timeline {
-    display: block;
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-  .site {
-    width: 75%;
-    height: 100vh;
-  }
-}
-
 .tiki-footer {
   text-align: center;
 }
@@ -127,6 +88,59 @@ h2, h3, h4, h5 {
 .important-message {
   font-size: 20px;
   margin: 10px 0px;
+}
+
+@media only screen and (min-width: 770px) {
+  .navbar .nav{
+      float: none;
+      text-align: center;
+  }
+  .navbar .nav > li{
+      float: none;
+      display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .tiki-footer .sponsors {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tiki-footer .sponsor img {
+    width: 16%;
+  }
+  .tiki-footer .sponsor a {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 770px) {
+  .navbar .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tiki-header .logo {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .twitter-timeline {
+    display: block;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .site {
+    width: 75%;
+    height: 100vh;
+  }
 }
 
 /* Home */

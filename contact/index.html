@@ -3,6 +3,8 @@ layout: default
 title: Contact
 ---
 
+
+
 <div id="contact">
 	<h1>Contact Us for Questions or Help Us Out</h1>
 
@@ -32,23 +34,70 @@ title: Contact
 		</div>
 		<div class='col-md-6'>
 			<h3>Contact Us</h3>
+			<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://tikinight.wufoo.com/forms/z1i7mzmv1p64tk1/#public">
 			<div class='form-group'>
-				<div class='control-label'>Name</div>
-				<input type='text' class='name form-control'></input>
+				<label class="desc" id="title1" for="Field1">
+					Name
+					<span id="req_1" class="req">*</span>
+				</label>
+				<div>
+					<input id="Field1" name="Field1" type="text" class="field text medium form-control" value="" maxlength="255" tabindex="1" onkeyup="" required />
+				</div>
 			</div>
 			<div class='form-group'>
-				<div class='control-label'>Email</div>
-				<input type='text' class='email form-control'></input>
+				<label class="desc" id="title5" for="Field5">
+					Email
+					<span id="req_5" class="req">*</span>
+				</label>
+				<div>
+					<input id="Field5" name="Field5" type="email" spellcheck="false" class="field text medium form-control" value="" maxlength="255" tabindex="2" required /> 
+				</div>
 			</div>
 			<div class='form-group'>
-				<div class='control-label'>Phone</div>
-				<input type='text' class='phone form-control'></input>
+				<label class="desc" id="title6" for="Field6">
+					Phone Number
+					<span id="req_6" class="req">*</span>
+				</label>
+				<div>
+					<span>
+						<input id="Field6" name="Field6" type="tel" class="field text form-control three-digits" placeholder="###" value="" size="3" maxlength="3" tabindex="3" required />
+					</span>
+					<span class="symbol">-</span>
+					<span>
+						<input id="Field6-1" name="Field6-1" type="tel" class="field text form-control three-digits" placeholder="###" value="" size="3" maxlength="3" tabindex="4" required />
+					</span>
+					<span class="symbol">-</span>
+					<span>
+						 <input id="Field6-2" name="Field6-2" type="tel" class="field text form-control four-digits" placeholder="####" value="" size="4" maxlength="4" tabindex="5" required />
+					</span>
+				</div>
 			</div>
 			<div class='form-group'>
-				<div class='control-label'>Message</div>
-				<textarea class='message form-control'></textarea>
+				<label class="desc" id="title7" for="Field7">
+					Message
+					<span id="req_7" class="req">*</span>
+				</label>
+
+				<div>
+					<textarea id="Field7" 
+					name="Field7" 
+					class="field textarea medium form-control" 
+					spellcheck="true" 
+					rows="10" cols="50" 
+					tabindex="6" 
+					onkeyup=""
+					required  ></textarea>
+				</div>
 			</div>
-			<a class='btn btn-primary send'>Send</a>
+			<div>
+				<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>
+			</div>
+			<div class='hidden-wufoo-components'>
+				<label for="comment">Do Not Fill This Out</label>
+				<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+				<input type="hidden" id="idstamp" name="idstamp" value="8jhpqKz7krC78Ucmfe09ez9mshD0b3W0kJzQvFHN7vc=" />
+			</div>
+			</form> 
 		</div>
 	</div>
 </div>

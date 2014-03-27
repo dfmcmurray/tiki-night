@@ -3,8 +3,9 @@
   url: "http://www.soldoutcrowd.com/"
 
 - name: "Sweet! Hollywood"
-  img: "sweethollywoodlogo.png"
+  img: "sweethollywoodlogo_full.png"
   url: "http://sweetlosangeles.com/"
+  big_kahuna: true
 
 - name: "Saltillo Grill"
   img: "SaltilloGrill.jpg"

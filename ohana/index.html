@@ -47,4 +47,41 @@ title: Ohana
 	<p>
 		Ohana means Family. We’ll leave it up to you to figure out what a Menehune is. 
 	</p>
+
+	<h3>Thank you to our Big Kahuna Sponsors!</h3>
+
+	<div class='sponsors'>
+		{% for sponsor in site.data.sponsors %}
+			{% if sponsor.big_kahuna %}
+				<span class='sponsor'>
+					<a href='{{sponsor.url}}'>
+						<title>{{sponsor.name}}</title>
+						<img src='{{site.baseurl}}/assets/{{sponsor.img}}'>
+					</a>
+				</span>
+			{% endif %}
+		{% endfor %}
+	</div>
+
+	<h3>Other Sponsors</h3>
+
+	<div class='row'>
+		<div class='col-sm-3 col-sm-offset-2'>
+			<hr>
+			{% for sponsor in site.data.sponsors %}
+				{% unless sponsor.big_kahuna %}
+					<h5>{{sponsor.name}}</h5>
+				{% endunless %}
+			{% endfor %}
+			<hr>
+		</div>
+		<div class='col-sm-3 col-sm-offset-2'>
+			<hr>
+			{% for name in site.data.personal_sponsors %}
+				<h5>{{name}}</h5>
+			{% endfor %}
+			<hr>
+		</div>
+	</div>
+
 </div>

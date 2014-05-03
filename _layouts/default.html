@@ -32,6 +32,10 @@
 
       {% include nav.html %}
 
+      {% if page.showTicketBanner %}
+        {% include ticket_banner.html %}
+      {% endif %}
+
       <div class="content">
         {{ content }}
       </div>

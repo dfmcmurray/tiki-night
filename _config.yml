@@ -2,3 +2,4 @@ name: Tiki Night
 markdown: redcarpet
 pygments: true
 baseurl: /tiki-night
+tickets_url: "https://google.com"

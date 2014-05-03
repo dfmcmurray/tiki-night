@@ -41,6 +41,34 @@ h2, h3, h4, h5 {
   width: 15%;
 }
 
+.buy-tickets {
+  padding: 5px 10%;
+  text-align: center;
+  background: #f5d2b8;
+}
+
+.buy-tickets > img {
+  height: 80px;
+  margin: 0px 15px;
+}
+
+.buy-tickets > * {
+  display: inline-block;
+}
+
+.buy-tickets-banner {
+  width: 65%;
+  vertical-align: middle;
+  padding: 15px 0px;
+}
+
+.buy-tickets-banner > * {
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .twitter-timeline {
   display: none; 
 }
@@ -127,6 +155,9 @@ h2, h3, h4, h5 {
 @media only screen and (max-width: 900px) {
   .tiki-header .logo {
     width: 80%;
+  }
+  .buy-tickets > img {
+    display: none;
   }
 }
 

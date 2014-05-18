@@ -1,11 +1,14 @@
 - name: "Skypp Cabanas"
   img: "skypp_cabanas.jpg"
 
-- name: "Melissa Friedman"
+- name: "Melissa Friedman Vosberg"
   img: "melissa_friedman.JPG"
 
 - name: "Jamie Tobitt"
   img: "jamie_tobitt.jpg"
+
+- name: "Sean Vosberg"
+  img: "sean_vosberg.jpg"
 
 - name: "Mona Kirton"
   img: "mona_kirton.JPG"
@@ -18,3 +21,22 @@
 
 - name: "Monica Stewart"
   img: "monica_stewart.jpg"
+
+- name: "Hannah Estes"
+  img: "hannah_estes.jpg"
+
+- name: "Michael Funk"
+  img: "michael_funk.jpg"
+
+- name: "Bill Lovelace"
+  img: "bill_lovelace.jpg"
+
+- name: "Chase Morrison"
+  img: "chase_morrison.jpg"
+
+- name: "Donovan McMurray"
+  img: "donovan_mcmurray.jpg"
+
+- name: "Mary Anna Parker"
+  img: "mary_anna_parker.jpg"
+

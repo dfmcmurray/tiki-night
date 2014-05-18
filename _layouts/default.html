@@ -15,7 +15,23 @@
       <script src="{{site.baseurl}}/libs/wufoo.js"></script>
     {% endif %}
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>
+      !function(d,s,id){
+        var js,
+          fjs=d.getElementsByTagName(s)[0],
+          p=/^http:/.test(d.location)?'http':'https';
+
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;
+          js.src=p+"://platform.twitter.com/widgets.js";
+          // After loading, remove width from twitter timeline, which is 
+          // being set by twitter for some stupid reason.
+          js.setAttribute('onload', "twttr.events.bind('rendered',function(e) { try{$('.twitter-timeline').css('width', '')} catch(e){ /*no-op*/ } });");
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,"script","twitter-wjs");
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

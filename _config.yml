@@ -1,5 +1,5 @@
 name: Tiki Night
 markdown: redcarpet
 pygments: true
-baseurl: /tiki-night
+baseurl: /
 tickets_url: "https://google.com"

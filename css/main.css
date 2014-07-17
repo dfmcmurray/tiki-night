@@ -218,6 +218,7 @@ h2, h3, h4, h5 {
   font-size: 20px;
   padding: 10px;
   margin: 6px auto;
+  width: 95%;
 }
 
 #about ul li:before, #about ul li:after {

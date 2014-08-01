@@ -7,17 +7,9 @@
   url: "http://sweetlosangeles.com/"
   big_kahuna: true
 
-- name: "Saltillo Grill"
-  img: "SaltilloGrill.jpg"
-  url: "http://saltillogrill.com/"
-
 - name: "501st Legion"
   img: "501stmasterroundlarge.jpg"
   url: "http://southerncaliforniagarrison.com/"
-
-- name: "Universal Studios Hollywood"
-  img: "univ_holly.jpg"
-  url: "http://www.universalstudioshollywood.com/"
 
 - name: "Team Tiki Ha Ha"
   img: "TeamTikiHaHaMobileLogo.png"
